@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <title>Dream</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(document).ready(function() {
+        var scroll_start = 0;
+        var startchange = $('#headerPosition');
+        var offset = startchange.offset();
+        if (startchange.length) {
+          $(document).scroll(function() {
+            scroll_start = $(this).scrollTop();
+            if (scroll_start > offset.top) {
+              $(".fixed-nav-bar").css('background-color', '#000000');
+              var width = $(window).width();
+              var height = $(window).height();
+              if ((width <= 767)) {
+                $(".fixed-nav-bar").css('height', '170px');
+              } else {
+                $(".fixed-nav-bar").css('height', '80px');
+              }
+            } else {
+              $('.fixed-nav-bar').css('background-color', 'transparent');
+            }
+          });
+        }
+      });
+    });
+
+  </script>
+</head>
+
+<body>
+  <div id="headerPosition">
+    <div class="container-fluid main_bg">
+      <div id="header" class="fixed-nav-bar ">
+        <div class="container ">
+          <div class="row ">
+            <div class="col-md-4">
+              <h2>Dreams</h2>
+            </div>
+            <div class="col-md-8">
+              <ul>
+                <li><a href="#headerPosition">Home</a></li>
+                <li><a href="#servicesPosition">Services</a></li>
+                <li><a href="#amazingPosition">Portfolio</a></li>
+                <li><a href="#aboutPosition">About</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#footer">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container " id="title">
+        <div class="row ">
+          <div class="col-md-12 ">
+            <h1>Build the website of your dreams</h1>
+            <hr />
+            <p>We are a digital agency that believes in building things that are meaningful!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="servicesPosition">
+    <div class="container " id="services">
+      <div class="row ">
+        <div class="col-md-12">
+          <h2>CORE SERVICES</h2>
+          <hr>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="beautiful">
+      <div class="row ">
+        <div class="col-sm"> <a href=""><img src="img/tools.png" alt=""></a>
+          <h2>Beautiful Designs</h2>
+          <p>Proin iaculis consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in. Iaculis purus digni. </p>
+        </div>
+        <div class="col-sm" id="midpic" style="padding-left: 100px;padding-right: 100px;
+ "> <a href=""><img src="img/flow-tree.png" alt=""></a>
+          <h2>web development</h2>
+          <p>Proin iaculis consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in. Iaculis purus digni. </p>
+        </div>
+        <div class="col-sm"> <a href=""><img src="img/lifebuoy.png" alt=""></a>
+          <h2>24/7 Support To you</h2>
+          <p>Proin iaculis consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in. Iaculis purus digni. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="otherExpertPosition">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8 " style="background-color: #f7f7f7;">
+          <h1 class="text1" style=" ">OTHER EXPERTISE</h1>
+          <p class="text2" style=" ">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt consequat sem cure digni ssim. </p>
+          <div class="container">
+            <div class="row expert">
+              <div class="col-6 "><img style="" src="img/Gear%20Icon.png" alt="">
+                <h2>Custom setup</h2>
+                <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
+              </div>
+              <div class="col-6 "><img src="img/Cloud%20Icon.png" alt="">
+                <h2>Cloud control</h2>
+                <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
+              </div> <!-- Force next columns to break to new line -->
+              <div class="w-100"></div>
+              <div class="col-6 "><img src="img/Star%20Icon.png" alt="">
+                <h2>All star support team</h2>
+                <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
+              </div>
+              <div class="col-6 "><img src="img/Lock%20Icon.png" alt="">
+                <h2>top notch security</h2>
+                <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
+              </div>
+            </div>
+          </div> <button class="ebutton" style=" " type="submit"> LEARN MORE </button>
+        </div>
+        <div class="col-md-4" style="background-color: #f7f7f7;background-image:url(img/Image.png);background-repeat:no-repeat;background-position: right;
+ "></div>
+      </div>
+    </div>
+  </div>
+  <div id="amazingPosition">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 text0" style=" ">
+          <h1>Amazing Portfolio</h1>
+          <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit. <br> <br> <br> Iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat.</p>
+          <div class="container" style="padding-left: 0px;">
+            <div class="row no-gutters portfolio">
+              <div class="col-md-1"><img src="img/Gear%20Icon%20(1).png" alt=""></div>
+              <div class="col-md-11">
+                <h2>Sail away your worries</h2>
+                <p>adad adsad e digni ssim. Donec porttitora entum suscipit aenean rhoncus po</p>
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-md-1"><img src="img/Star%20Icon%20(1).png" alt=""></div>
+              <div class="col-md-11">
+                <h2>All-star support team</h2>
+                <p>adad adsad e digni ssim. Donec porttitora entum suscipit aenean rhoncus po</p>
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-md-1"><img src="img/Pie%20Icon.png" alt=""></div>
+              <div class="col-md-11">
+                <h2>fully Integrated service</h2>
+                <p>adad adsad e digni ssim. Donec porttitora entum suscipit aenean rhoncus po</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" style="background-image:url(img/border.png);background-repeat:no-repeat;background-position: right;
+ "></div>
+      </div>
+    </div>
+  </div>
+  <div id="galleryPosition">
+    <div class="container-fluid" id="g">
+      <div class="row no-gutters ">
+        <div class="col-md-4">
+          <div class="thumbnail"> <a href=""><img src="img/1.png" alt=""></a> </div>
+        </div>
+        <div class="col-md-4 ">
+          <div class="thumbnail"> <a href=""><img src="img/2.png" alt=""></a> </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail"> <a href=""><img src="img/3.png" alt=""></a> </div>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <div class="thumbnail"> <a href=""><img src="img/4.png" alt=""></a> </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail"> <a href=""><img src="img/5.png" alt=""></a> </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail"> <a href=""><img src="img/6.png" alt=""></a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="aboutPosition">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12" style="text-align: center">
+          <h2>ABOUT US</h2>
+          <hr style=" text-align: center;background-color: #35c2f8;
+ width: 111px;
+ height: 1px;
+ ">
+        </div>
+        <div class="col-md-12">
+          <div class="container">
+            <div class="timeline">
+              <div class="row no-gutters justify-content-end justify-content-md-around align-items-start timeline-nodes">
+                <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+                  <h3 class=" ">July 2010 Our Humble Beginnings </h3>
+                  <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
+                </div>
+                <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+                  <div class="x" style="background-image: url(img/t2.png);background-size: contain;
+ "></div>
+                </div>
+                <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date"> </div>
+              </div>
+              <div class="row no-gutters justify-content-end justify-content-md-around align-items-start timeline-nodes">
+                <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+                  <h3 class="">January 2011 Facing Startup Battles </h3>
+                  <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
+                </div>
+                <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+                  <div class="x" style="background-image: url(img/t3.png);background-size: contain;
+ "></div>
+                </div>
+                <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date"> </div>
+              </div>
+              <div class="row no-gutters justify-content-end justify-content-md-around align-items-start timeline-nodes">
+                <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+                  <h3 class="">December 2012 Enter The Dark Days </h3>
+                  <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
+                </div>
+                <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+                  <div class="x" style="background-image: url(img/t0.png);background-size: contain;
+ "></div>
+                </div>
+                <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date"> </div>
+              </div>
+              <div class="row no-gutters justify-content-end justify-content-md-around align-items-start timeline-nodes">
+                <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+                  <h3 class="">february 2014 Our Triumph </h3>
+                  <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
+                </div>
+                <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+                  <div class="x" style="background-image: url(img/t4.png);background-size: contain;
+ "></div>
+                </div>
+                <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date"> </div>
+              </div>
+              <div class="row no-gutters justify-content-end justify-content-md-around align-items-start timeline-nodes">
+                <div class="col-10 col-md-5 order-3 order-md-1 timeline-content"> </div>
+                <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+                  <div class="x" style="background-image: url(img/t5.png);background-size: contain;
+ "></div>
+                </div>
+                <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date"> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="team" style=" background-color: #f7f7f7;text-align: center;
+ padding-top: 100px;
+ padding-bottom: 100px;
+ ">
+    <h2 class="section-title" style="text-align: center;"><strong>AWSOME TEAM</strong></h2>
+    <hr style=" text-align: center;background-color: #35c2f8;
+ width: 111px;
+ height: 1px;
+ ">
+    <div class="flex-container" id="imagesPosition">
+      <div><img src="img/2.png" id="bigImage" class="rounded-circle"> <br>
+        <h3>ishan vimukthi</h3>
+        <p>daffsdf</p> <img src="img/Twitter%20Background%20(1).png" alt=""> <img src="img/Facebook Background (1).png" alt=""> <img src="img/Pinterest%20Background%20(1).png" alt="">
+      </div>
+      <div><img src="img/2.png" id="bigImage" class="rounded-circle" style="margin-left: 60px;margin-right: 60px;
+ "> <br>
+        <h3>ishan vimukthi</h3>
+        <p>daffsdf</p> <img src="img/Twitter%20Background%20(1).png" alt=""> <img src="img/Facebook Background (1).png" alt=""> <img src="img/Google+%20Background%20(1).png" alt="">
+      </div>
+      <div><img src="img/2.png" id="bigImage" class="rounded-circle"> <br>
+        <h3>ishan vimukthi</h3>
+        <p>daffsdf</p> <img src="img/Facebook Background (1).png" alt=""> <img src="img/Pinterest%20Background%20(1).png" alt="">
+      </div>
+    </div>
+    <div class="container" id="lastChapter">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt proin iaculis. </p>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </div>
+  <div id="footer" style="background-color: #111111;">
+    <div class="container-fluid">
+      <div class="row info" style="">
+        <div class="col-md-6">
+          <h3> Contact Us </h3>
+          <h2>Don’t be shy, drop us an email and say hello! We are a really nice bunch of people :)</h2>
+          <div class="row" id="icons">
+            <div class="col-md-6"><img src="img/Mobile-Icon.png" alt="">
+              <p>(416) 555-0000</p>
+            </div>
+            <div class="col-md-6"><img src="img/Mail-Icon.png" alt="">
+              <p>@dreams</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6"><img src="img/Twitter-Icon.png" alt="">
+              <p>@dreams</p>
+            </div>
+            <div class="col-md-6"><img src="img/Facebook-Icon.png" alt="">
+              <p>facebook.com/dreams</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6"><img src="img/Google+-Icon.png" alt="">
+              <p>plus.com/dreams</p>
+            </div>
+            <div class="col-md-6"><img src="img/Pinterest-Icon.png" alt="">
+              <p>pinterest.com/dreams</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <form role="form">
+            <div class="form-group"> <input type="email" class="form-control" id="exampleInputEmail1" /> </div>
+            <div class="form-group"> <input type="text" class="form-control" id="exampleInputName" /> </div> <textarea class="form-control" rows="5" id="comment"></textarea> <button style="" type="submit" class="btn btn-primary"> SEND MESSAGE </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <col-md-12>
+          <div class="col-md-12"></div>
+        </col-md-12>
+      </div>
+    </div>
+    <hr id="lastLine">
+    <p style="text-align: center;padding-bottom: 32px;
+ ">© 2014 Dreams By FreebiesXpress</p>
+  </div> <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
