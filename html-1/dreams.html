@@ -20,11 +20,11 @@
           $(document).scroll(function() {
             scroll_start = $(this).scrollTop();
             if (scroll_start > offset.top) {
-              $(".fixed-nav-bar").css('background-color', '#000000');
+              $(".fixed-nav-bar").css('background-color', 'rgba(0, 0, 0, 0.6)');
               var width = $(window).width();
               var height = $(window).height();
               if ((width <= 767)) {
-                $(".fixed-nav-bar").css('height', '170px');
+                $(".fixed-nav-bar").css('height', '260px');
               } else {
                 $(".fixed-nav-bar").css('height', '80px');
               }
