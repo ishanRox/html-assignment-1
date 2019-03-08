@@ -19,17 +19,23 @@
         if (startchange.length) {
           $(document).scroll(function() {
             scroll_start = $(this).scrollTop();
-            if (scroll_start > offset.top) {
+             var width = $(window).width();
+            
+            if (scroll_start > offset.top  && (width >= 767)) {
               $(".fixed-nav-bar").css('background-color', 'rgba(0, 0, 0, 0.6)');
               var width = $(window).width();
               var height = $(window).height();
               if ((width <= 767)) {
-                $(".fixed-nav-bar").css('height', '260px');
+            //    $(".fixed-nav-bar").css('height', '260px');
               } else {
-                $(".fixed-nav-bar").css('height', '80px');
+               // $(".fixed-nav-bar").css('height', '80px');
               }
             } else {
-              $('.fixed-nav-bar').css('background-color', 'transparent');
+              
+              if ((width >= 767)){$('.fixed-nav-bar').css('background-color', 'transparent');}else{
+                $('.fixed-nav-bar').css('background-color', 'black');
+              }
+           
             }
           });
         }
@@ -37,12 +43,67 @@
     });
 
   </script>
+ 
+  <style>
+  
+  </style>
 </head>
 
 <body>
-  <div id="headerPosition">
-    <div class="container-fluid main_bg">
-      <div id="header" class="fixed-nav-bar ">
+
+ 
+ <nav style="" class="navbar navbar-expand-lg navbar-dark sticky-top fixed-nav-bar">
+  <a class="navbar-brand" id="header" href="#"><h2>Dreams</h2></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div style="    margin-right: 46px;
+    margin-top: 36px;" 
+    
+   
+    
+    class="collapse navbar-collapse " id="navbarSupportedContent">
+   
+    <div id="asd">
+      <ul class="navbar-nav navbar-dark ml-auto " id="header" >
+    
+       
+           <li class="nav-item active" >
+        <a class="nav-link" href="#headerPosition">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a  class="nav-link" href="#servicesPosition">Services <span class="sr-only">(current)</span></a>
+      </li>
+       <li class="nav-item active">
+        <a class="nav-link" href="#amazingPosition">Portfolio <span class="sr-only">(current)</span></a>
+      </li>
+       <li class="nav-item active">
+        <a class="nav-link" href="#aboutPosition">About <span class="sr-only">(current)</span></a>
+      </li>
+     
+       <div id="s" >
+           <li class="nav-item active">
+        <a class="nav-link" href="#team">Team <span class="sr-only">(current)</span></a>
+      </li>
+       </div>
+         
+       <li class="nav-item active">
+        <a class="nav-link" href="#footer">Contact <span class="sr-only">(current)</span></a>
+      </li>
+         
+       
+         
+    </ul>
+    </div>
+  </div>
+  
+  
+</nav>
+ 
+
+
+   <!--<div id="header" class="fixed-nav-bar ">
         <div class="container ">
           <div class="row ">
             <div class="col-md-4">
@@ -60,7 +121,12 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
+ 
+ 
+  <div id="headerPosition">
+    <div class="container-fluid main_bg">
+      
       <div class="container " id="title">
         <div class="row ">
           <div class="col-md-12 ">
@@ -72,6 +138,8 @@
       </div>
     </div>
   </div>
+  
+
   <div id="servicesPosition">
     <div class="container " id="services">
       <div class="row ">

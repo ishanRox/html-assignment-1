@@ -4,6 +4,7 @@
     @font-face { font-family: Montserrat; src: url('../fonts/Montserrat-Regular.ttf'); }
     
     .main_bg {
+       margin:0;
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 100%, rgba(0, 0, 0, 0.75) 100%), url('../img/back.jpg');
       height: 660px;
     }
@@ -20,9 +21,9 @@
 
     #header h2 {
       float: left;
-      margin-top: 40px;
-      padding-left: 45px;
-      margin-right: 385px;
+      margin-top: 25px;
+    padding-left: 125px;
+        margin-right: 348px;
       margin-bottom: 0px;
       font-family: Bello Script;
       color: #ffffff;
@@ -33,13 +34,14 @@
 
     #header ul {
       margin-top: 40px;
-      float: right;
+     
+float: right;
     }
 
     #header li {
-      display: inline-block;
-      padding-left: 50px;
-      padding-right: 0px;
+     /* display: inline-block;*/
+      padding-left: 0px;
+      padding-right: 40px;
     }
 
     #header a {
@@ -58,6 +60,10 @@
       color: #ed4736;
     }
 
+
+
+
+
     #title h1 {
       text-transform: uppercase;
       text-align: center;
@@ -65,7 +71,7 @@
       color: #ffffff;
       font-size: 49px;
       font-weight: 700;
-      margin-top: 176px;
+         margin-top: 220px;
       margin-left: 256px;
       margin-right: 250px;
       margin-bottom: 51px;
@@ -711,8 +717,35 @@
       }
     }
 
+@media screen and (min-width: 1024px) {
+    /* Styles go here */
+    
+}
+
+
+
     /*phones walata */
     @media screen and (max-width: 575px) {
+      #header a:hover {
+        
+      
+      color: #ed4736;
+        border-left: 80px solid white;
+       font-size: 40px;
+    }
+      .fixed-nav-bar {
+     
+      height:inherit;
+      transition: 2s;
+        background-color: black;
+        
+    }
+      #col{
+      background-color: black!important;
+    }
+    .navbar-transparent {
+        background: #000 !important; /*Add your own background*/
+    }
       .timeline::before {
         content: "";
         display: block;
@@ -755,7 +788,7 @@
         font-size: 15px;
         font-weight: 400;
         line-height: 5px;
-        text-align: center;
+        text-align: left;
         text-decoration: none;
         transition: 1s;
       }
@@ -878,9 +911,14 @@
         height: 1px;
       }
  #header li {
+   /*  margin: 0 -9999rem;
+  add back negative margin value */
+ /* padding: 0.25rem 9999rem;
+  background: rgba(0, 0, 0, 0.5);
+   
             border: 1px solid;
            display: block;
-        padding-left: 44px;
+        padding-left: 40px;*/
       }
 
       #header ul {
