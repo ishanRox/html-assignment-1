@@ -51,14 +51,17 @@
   margin-top: 40px;
   float: right;
 }
-aditionalUl{
+
+aditionalUl {
   padding: 120px;
-  
+
 }
- .navbarPadding{
-        margin-right: 46px;
-    margin-top: 36px;
-  }
+
+.navbarPadding {
+  margin-right: 46px;
+  margin-top: 36px;
+}
+
 #header li {
   /* display: inline-block;*/
   padding-left: 0px;
@@ -144,7 +147,10 @@ aditionalUl{
   text-align: center;
 }
 
-#beautiful #midpic {}
+#beautiful #midpic {
+  padding-left: 100px;
+  padding-right: 100px;
+}
 
 #services hr {
   text-align: center;
@@ -575,7 +581,7 @@ hr .footerhr {
   font-weight: 400;
   line-height: 22px;
   text-align: left;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 #amazingPosition img {
@@ -625,11 +631,23 @@ hr .footerhr {
 
 /*tab walata */
 @media screen and (max-width: 1025px) {
+  #otherExpertPosition .ebutton {
+    margin-left: 0px; 
+    
+    width: 100%;
+  }
+  #g img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
   .navbarPadding {
     margin-right: 46px;
     margin-left: 90px;
-    margin-top: inherit!important;
-}
+    margin-top: inherit !important;
+  }
+
   .fixed-nav-bar {
     height: inherit;
     transition: 2s;
@@ -637,10 +655,11 @@ hr .footerhr {
   }
 
   .lastP {
-    margin-left: inherit!important;
+    margin-left: inherit !important;
     text-align: center !important;
     padding-bottom: 32px !important;
-}
+  }
+
   .middleImg {
     margin-left: 50px;
     margin-right: 50px;
@@ -675,6 +694,13 @@ hr .footerhr {
     font-size: 12px;
     margin-left: inherit;
     */
+    margin-left: 32px;
+    font-family: 'Noto Sans';
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
   }
 
   #amazingPosition p {
@@ -740,7 +766,7 @@ hr .footerhr {
     margin-top: inherit;
     float: right;
   }
- 
+
 
   #title h1 {
     margin-left: 0px;
@@ -794,12 +820,29 @@ hr .footerhr {
 
 /*phones walata */
 @media screen and (max-width: 640px) {
+  #beautiful #midpic {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 
-  .navbarPadding{
-     margin-left: inherit;
-        margin-right: 46px;
+  #beautiful h2 {
+    PADDING-LEFT: 0px;
+  }
+
+  #beautiful p {
+    PADDING-LEFT: 0px;
+  }
+
+  #beautiful img {
+    padding-left: inherit;
+  }
+
+  .navbarPadding {
+    margin-left: inherit;
+    margin-right: 46px;
     margin-top: inherit;
   }
+
   .lastP {
     text-align: center !important;
     padding-bottom: 32px !important;
@@ -818,7 +861,7 @@ hr .footerhr {
 
   #footer {
     background-color: #111111;
-    height: inherit;
+    height: 100%;
   }
 
   #header a:hover {
@@ -842,18 +885,21 @@ hr .footerhr {
     /*Add your own background*/
   }
 
-  
-  
+
+
   .timeline-nodes {
     padding-left: 105px;
   }
+
   .timeline-nodes:nth-child(odd) h3,
   .timeline-nodes:nth-child(odd) p {
     text-align: left;
   }
+
   .timeline-nodes:nth-child(even) {
     flex-direction: row;
   }
+
   .timeline::before {
     content: "";
     display: block;
@@ -866,26 +912,32 @@ hr .footerhr {
     z-index: 1;
     transform: translateX(-50%);
   }
+
   .timeline h3 {
     font-size: 1.7rem;
   }
+
   .timeline p {
     font-size: 14px;
   }
+
   .timeline-image {
     position: absolute;
     left: 0%;
     top: 60px;
-    transform: translateX(-50%;);
+    transform: translateX(-50%;
+    );
   }
+
   .timeline-nodes:nth-child(even) .timeline-date {
     text-align: left;
   }
+
   .timeline-image::before {
     width: 65px;
     height: 65px;
   }
-  
+
   .timeline::before {
     content: "";
     display: block;
@@ -1004,7 +1056,8 @@ hr .footerhr {
     font-weight: 700;
     text-align: center;
     padding-top: 90px;
-    padding-left: inherit;
+    padding-left: 0px;
+    ;
   }
 
   #otherExpertPosition .text2 {
@@ -1015,7 +1068,7 @@ hr .footerhr {
     text-align: center;
     padding-bottom: 30px;
     padding-top: 25px;
-    padding-left: inherit;
+    padding-left: 0px;
   }
 
   .expert {
