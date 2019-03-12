@@ -24,6 +24,9 @@
   height: 660px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 .fixed-nav-bar {
   position: fixed;
   top: 0;
@@ -131,7 +134,7 @@ aditionalUl {
   PADDING-LEFT: 27px;
   font-family: 'Noto Sans';
   color: #888888;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 22px;
   text-align: center;
@@ -142,7 +145,7 @@ aditionalUl {
   text-transform: uppercase;
   font-family: Montserrat-Bold;
   color: #222222;
-  font-size: 16px;
+  font-size: 17px;
   padding-top: 40px;
   font-weight: bold;
   line-height: 25px;
@@ -282,6 +285,7 @@ aditionalUl {
 }
 
 #footer form {
+  padding-left: 20px;
   width: 475px;
   padding-bottom: 20px;
 }
@@ -299,7 +303,7 @@ aditionalUl {
 #otherExpertPosition .text2 {
   font-family: 'Noto Sans';
   color: #777777;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   text-align: left;
   padding-bottom: 30px;
@@ -308,13 +312,13 @@ aditionalUl {
 }
 
 #otherExpertPosition .ebutton {
-  clear: both;
-  margin-bottom: 80px;
-  margin-top: 20px;
-  margin-left: 165px;
-  background-color: #ffffff;
-  width: 160px;
-  height: 40px;
+  color: #222222;
+    margin-bottom: 80px;
+    margin-top: 20px;
+    margin-left: 165px;
+    background-color: #ffffff;
+    width:180px;
+    height: 60px;
   border: 1px solid #35c2f8;
   border-radius: 45px;
   font-family: Montserrat-Bold;
@@ -327,7 +331,7 @@ aditionalUl {
   margin-left: 34px;
   font-family: 'Noto Sans';
   color: #ffffff;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 18px;
   text-align: left;
@@ -374,7 +378,7 @@ aditionalUl {
   text-align: center;
   transform: scaleY(1.0783);
   /* width and height properties ommitted due to transform */
-  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
+  /*text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);*/
 }
 
 #footer {
@@ -410,17 +414,18 @@ aditionalUl {
 .expert p {
   font-family: 'Noto Sans';
   color: #777777;
-  font-size: 14px;
-  font-weight: 400;
-  text-align: left;
-  padding-top: 5px;
-  padding-left: 47px;
+      font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 47px;
+    letter-spacing: -1px;
 }
 
 .expert h2 {
   font-family: Montserrat-Bold;
   color: #222222;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
   font-weight: 700;
   text-align: left;
@@ -472,9 +477,10 @@ aditionalUl {
 }
 
 .timeline h3 {
-  font-family: Montserrat-Bold;
+  text-transform: uppercase;
+  font-family: Montserrat;
   color: #222222;
-  font-size: 16px;
+    font-size: 17px;
   font-weight: bold;
 }
 
@@ -482,7 +488,7 @@ aditionalUl {
 .timeline time {
   font-family: Noto Sans;
   color: #777777;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   text-align: left;
 }
@@ -581,13 +587,13 @@ hr .footerhr {
 }
 
 #amazingPosition p {
-  font-family: Noto Sans;
-  color: #777777;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
-  text-align: left;
-  padding-bottom: 30px;
+    font-family: Noto Sans;
+    color: #777777;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: left;
+    padding-bottom: 30px;
 }
 
 #amazingPosition img {
@@ -626,11 +632,14 @@ hr .footerhr {
 
 #lastLine {
   background-color: #ffffff;
-  width: 940px;
+ width: 1018px;
+    
+    margin-left: 18px;
   height: 1px;
 }
 
 .lastP {
+      font-size: 14px!important;
   text-align: center !important;
   padding-bottom: 32px !important;
 }
@@ -678,6 +687,7 @@ hr .footerhr {
   }
 
   #footer form {
+       padding-left: 0px;
     width: inherit;
     padding-bottom: 20px;
   }
@@ -861,6 +871,7 @@ hr .footerhr {
   }
 
   #footer form {
+    padding-left: 0px;
     width: inherit;
     padding-bottom: 20px;
   }
