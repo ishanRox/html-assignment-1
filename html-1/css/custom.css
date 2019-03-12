@@ -30,7 +30,7 @@
   left: 0;
   z-index: 9999;
   width: 100%;
-  height: 80px;
+      height: 86px;
   transition: 2s;
 }
 
@@ -38,7 +38,7 @@
   float: left;
   margin-top: 25px;
   padding-left: 125px;
-  margin-right: 348px;
+  margin-right: 358px;
   margin-bottom: 0px;
   font-family: Bello Script;
   color: #ffffff;
@@ -85,16 +85,18 @@ aditionalUl {
 }
 
 #title h1 {
+      letter-spacing: -3px;
+    word-spacing: -3px;
   text-transform: uppercase;
   text-align: center;
   font-family: Montserrat-Bold;
   color: #ffffff;
   font-size: 49px;
   font-weight: 700;
-  margin-top: 220px;
+     margin-top: 242px;
   margin-left: 256px;
   margin-right: 237px;
-  margin-bottom: 51px;
+     margin-bottom: 45px;
 }
 
 #title hr {
@@ -162,8 +164,9 @@ aditionalUl {
 }
 
 #services h2 {
-  margin-top: 99px;
-  margin-bottom: 28px;
+  letter-spacing: -2px;
+ margin-top: 76px;
+  margin-bottom: 20px;
   font-family: Montserrat-Bold;
   color: #222222;
   font-size: 40px;
@@ -557,11 +560,12 @@ hr .footerhr {
 #otherExpertPosition {}
 
 #servicesPosition {
-  padding-bottom: 90px;
+      padding-bottom: 86px;
 }
 
 #amazingPosition {
   padding-bottom: 80px;
+  padding-top: 40px;
 }
 
 #amazingPosition h1 {
@@ -572,6 +576,8 @@ hr .footerhr {
   font-weight: 700;
   line-height: 75px;
   text-align: left;
+  word-spacing: -4px;
+    letter-spacing: -2px;
 }
 
 #amazingPosition p {
@@ -998,6 +1004,8 @@ hr .footerhr {
     padding-top: 180px;
     margin: auto;
     margin-top: 90px;
+    letter-spacing: inherit; 
+    word-spacing: inherit; 
   }
 
   #title p {
