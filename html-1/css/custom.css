@@ -27,13 +27,14 @@
 html {
   scroll-behavior: smooth;
 }
+
 .fixed-nav-bar {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 9999;
   width: 100%;
-      height: 86px;
+  height: 86px;
   transition: 2s;
 }
 
@@ -72,11 +73,12 @@ aditionalUl {
 }
 
 #header a {
+  letter-spacing: 2px;
   text-transform: uppercase;
   font-family: Montserrat;
-  color: #ffffff;
+  color: #fefefe;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 41px;
   text-align: center;
   text-decoration: none;
@@ -88,18 +90,18 @@ aditionalUl {
 }
 
 #title h1 {
-      letter-spacing: -3px;
-    word-spacing: -3px;
+  letter-spacing: -3px;
+  word-spacing: -3px;
   text-transform: uppercase;
   text-align: center;
   font-family: Montserrat-Bold;
   color: #ffffff;
   font-size: 49px;
   font-weight: 700;
-     margin-top: 242px;
+  margin-top: 242px;
   margin-left: 256px;
   margin-right: 237px;
-     margin-bottom: 45px;
+  margin-bottom: 45px;
 }
 
 #title hr {
@@ -168,7 +170,7 @@ aditionalUl {
 
 #services h2 {
   letter-spacing: -2px;
- margin-top: 76px;
+  margin-top: 76px;
   margin-bottom: 20px;
   font-family: Montserrat-Bold;
   color: #222222;
@@ -290,6 +292,11 @@ aditionalUl {
   padding-bottom: 20px;
 }
 
+#footer form ::placeholder {
+  color: #bababa;
+
+}
+
 #footer .info {
   padding-left: 190px;
   padding-right: 229px;
@@ -313,13 +320,13 @@ aditionalUl {
 
 #otherExpertPosition .ebutton {
   color: #222222;
-    margin-bottom: 80px;
-    margin-top: 20px;
-    margin-left: 165px;
-    background-color: #ffffff;
-    width:180px;
-    height: 60px;
-  border: 1px solid #35c2f8;
+  margin-bottom: 80px;
+  margin-top: 20px;
+  margin-left: 165px;
+  background-color: #ffffff;
+  width: 180px;
+  height: 60px;
+  border: 1px solid #ceeefb;
   border-radius: 45px;
   font-family: Montserrat-Bold;
   font-weight: bold;
@@ -354,7 +361,7 @@ aditionalUl {
 #footer h2 {
   font-family: 'Noto Sans';
   color: #ffffff;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   text-align: left;
@@ -414,12 +421,12 @@ aditionalUl {
 .expert p {
   font-family: 'Noto Sans';
   color: #777777;
-      font-size: 16px;
-    font-weight: 400;
-    text-align: left;
-    padding-top: 5px;
-    padding-left: 47px;
-    letter-spacing: -1px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  padding-top: 5px;
+  padding-left: 47px;
+  letter-spacing: -1px;
 }
 
 .expert h2 {
@@ -435,7 +442,7 @@ aditionalUl {
   padding-top: 60px;
   font-family: Noto Sans;
   color: #777777;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 20px;
   text-align: center;
@@ -480,7 +487,7 @@ aditionalUl {
   text-transform: uppercase;
   font-family: Montserrat;
   color: #222222;
-    font-size: 17px;
+  font-size: 17px;
   font-weight: bold;
 }
 
@@ -566,7 +573,7 @@ hr .footerhr {
 #otherExpertPosition {}
 
 #servicesPosition {
-      padding-bottom: 86px;
+  padding-bottom: 86px;
 }
 
 #amazingPosition {
@@ -583,17 +590,17 @@ hr .footerhr {
   line-height: 75px;
   text-align: left;
   word-spacing: -4px;
-    letter-spacing: -2px;
+  letter-spacing: -2px;
 }
 
 #amazingPosition p {
-    font-family: Noto Sans;
-    color: #777777;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 23px;
-    text-align: left;
-    padding-bottom: 30px;
+  font-family: Noto Sans;
+  color: #777777;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: left;
+  padding-bottom: 30px;
 }
 
 #amazingPosition img {
@@ -632,25 +639,27 @@ hr .footerhr {
 
 #lastLine {
   background-color: #ffffff;
- width: 1018px;
-    
-    margin-left: 18px;
+  width: 1018px;
+
+  margin-left: 18px;
   height: 1px;
 }
 
 .lastP {
-      font-size: 14px!important;
+  font-size: 14px !important;
   text-align: center !important;
   padding-bottom: 32px !important;
+  margin-left: 0px!important;
 }
 
 /*tab walata */
 @media screen and (max-width: 1025px) {
   #otherExpertPosition .ebutton {
-    margin-left: 0px; 
-    
+    margin-left: 0px;
+
     width: 100%;
   }
+
   #g img {
     display: block;
     width: 100%;
@@ -687,7 +696,7 @@ hr .footerhr {
   }
 
   #footer form {
-       padding-left: 0px;
+    padding-left: 0px;
     width: inherit;
     padding-bottom: 20px;
   }
@@ -847,6 +856,7 @@ hr .footerhr {
 
   #beautiful p {
     PADDING-LEFT: 0px;
+    font-size: 14px;
   }
 
   #beautiful img {
@@ -1015,8 +1025,8 @@ hr .footerhr {
     padding-top: 180px;
     margin: auto;
     margin-top: 90px;
-    letter-spacing: inherit; 
-    word-spacing: inherit; 
+    letter-spacing: inherit;
+    word-spacing: inherit;
   }
 
   #title p {
@@ -1032,7 +1042,7 @@ hr .footerhr {
   .expert p {
     font-family: 'Noto Sans';
     color: #777777;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 400;
     text-align: left;
   }
@@ -1128,6 +1138,7 @@ hr .footerhr {
     background-color: #ffffff;
     width: 100%;
     height: 1px;
+    margin-left: 0px;
   }
 
   #header li {
