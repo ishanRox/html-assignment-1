@@ -18,10 +18,23 @@
   src: url('../fonts/Montserrat-Black.ttf');
 }
 
+.navbar.center .navbar-inner {
+  text-align: center;
+}
+
+.navbar.center .navbar-inner .nav {
+  display: inline-block;
+  float: none;
+}
+
 .main_bg {
   margin: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 100%, rgba(0, 0, 0, 0.75) 100%), url('../img/back.jpg');
-  height: 660px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 100%, rgba(0, 0, 0, 0.75) 100%), url('../img/back.jpg')no-repeat;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 html {
@@ -41,7 +54,7 @@ html {
 #header h2 {
   float: left;
   margin-top: 25px;
-  padding-left: 125px;
+  /* padding-left: 125px;*/
   margin-right: 358px;
   margin-bottom: 0px;
   font-family: Bello Script;
@@ -73,7 +86,7 @@ aditionalUl {
 }
 
 #header a {
-  letter-spacing: 2px;
+  /* letter-spacing: 2px;*/
   text-transform: uppercase;
   font-family: Montserrat;
   color: #fefefe;
@@ -181,8 +194,8 @@ aditionalUl {
 }
 
 #g {
-  padding: 0px;
-  margin: 0px;
+  /* padding: 0px;
+  margin: 0px;*/
 }
 
 #g img {
@@ -283,12 +296,12 @@ aditionalUl {
   font-weight: 700;
   text-align: left;
   padding-top: 90px;
-  padding-left: 136px;
+  /*padding-left: 136px;*/
 }
 
 #footer form {
   padding-left: 20px;
-  width: 475px;
+  /* width: 475px;*/
   padding-bottom: 20px;
 }
 
@@ -298,8 +311,10 @@ aditionalUl {
 }
 
 #footer .info {
-  padding-left: 190px;
+  /* padding-left: 190px;
   padding-right: 229px;
+  
+*/
   padding-top: 100px;
 }
 
@@ -315,14 +330,14 @@ aditionalUl {
   text-align: left;
   padding-bottom: 30px;
   padding-top: 25px;
-  padding-left: 136px;
+  /* padding-left: 136px;*/
 }
 
 #otherExpertPosition .ebutton {
   color: #222222;
   margin-bottom: 80px;
   margin-top: 20px;
-  margin-left: 165px;
+  /* margin-left: 165px;*/
   background-color: #ffffff;
   width: 180px;
   height: 60px;
@@ -374,8 +389,8 @@ aditionalUl {
   margin-bottom: 50px;
   margin-top: 20px;
   background-color: #35c2f8;
-  width: 187px;
-  height: 50px;
+  width: 187px !important;
+  height: 50px !important;
   border: 0px;
   border-radius: 45px;
   font-family: Montserrat;
@@ -410,7 +425,7 @@ aditionalUl {
 }
 
 .expert {
-  padding-left: 123px;
+  /*padding-left: 123px;*/
 }
 
 .expert img {
@@ -570,7 +585,9 @@ hr .footerhr {
   height: 1px;
 }
 
-#otherExpertPosition {}
+#otherExpertPosition {
+  background-color: #f7f7f7;
+}
 
 #servicesPosition {
   padding-bottom: 86px;
@@ -621,7 +638,7 @@ hr .footerhr {
 
 #amazingPosition .text0 {
   padding-top: 40px;
-  padding-left: 130px;
+  /*padding-left: 130px;*/
 }
 
 #aboutPosition {
@@ -639,9 +656,10 @@ hr .footerhr {
 
 #lastLine {
   background-color: #ffffff;
-  width: 1018px;
+  width: 100%;
+  /*width: 1018px;
 
-  margin-left: 18px;
+  margin-left: 18px;*/
   height: 1px;
 }
 
@@ -649,11 +667,16 @@ hr .footerhr {
   font-size: 14px !important;
   text-align: center !important;
   padding-bottom: 32px !important;
-  margin-left: 0px!important;
+  margin-left: 0px !important;
 }
 
 /*tab walata */
 @media screen and (max-width: 1025px) {
+  #header li {
+    /* display: inline-block; */
+    padding-left: 0px;
+    padding-right: 5px;
+}
   #otherExpertPosition .ebutton {
     margin-left: 0px;
 
@@ -711,7 +734,7 @@ hr .footerhr {
     max-width: inherit;
   }*/
   #footer button {
-    width: 100%;
+    width: 100% !important;
   }
 
   #footer p {
@@ -1155,5 +1178,29 @@ hr .footerhr {
     margin-right: 50px;
     margin-top: inherit;
     width: -webkit-fill-available;
+  }
+}
+
+@media screen and (min-width: 1366px) and (max-width: 640px) {
+  
+  .expert {
+    padding-left: auto;
+  }
+
+  #g {
+    padding: auto;
+    margin: auto;
+  }
+
+  #footer button {
+    width: auto;
+    height: auto;
+  }
+
+
+  #footer .info {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 100px;
   }
 }
